@@ -1,0 +1,82 @@
+html {
+    cursor: url("cursore2.svg"), auto;
+}
+
+body {
+    font-family: "DM Mono", monospace;
+    --d: 2px;
+
+    background: radial-gradient(circle at var(--d) var(--d),
+
+            #efefef calc(var(--d) - 1px),
+            #0000 var(--d)) 0 0 /20px 20px;
+}
+
+.navbar img {
+    width: 50px;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.two-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.two-column .col-left {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 0 0 100px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.two-column .col-right {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-column .col-right .hero-shuttle {
+    width: 400px;
+}
+
+.hero p {
+    max-width: 500px;
+    padding: 0 0 10px 0;
+}
+
+.hero .col-left a {
+    font-weight: 700;
+    padding: 0 30px 0 0;
+}
+
+.col-left a:hover {
+    cursor: url("pointer.svg"), pointer;
+}
+
+.chi-sono {
+    color: #F49097;
+}
+
+.progetti {
+    color: #DFB2F4;
+}
+
+.contattami {
+    color: #55D6C2;
+}
