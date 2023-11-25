@@ -16,7 +16,7 @@ body {
     width: 50px;
 }
 
-.hero {
+.landing-page {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -51,32 +51,32 @@ body {
     align-items: center;
 }
 
-.two-column .col-right .hero-shuttle {
+.two-column .col-right .landing-page-shuttle {
     width: 400px;
 }
 
-.hero p {
+.landing-page p {
     max-width: 500px;
     padding: 0 0 10px 0;
 }
 
-.hero .col-left a {
+.landing-page .col-left a {
     font-weight: 700;
     padding: 0 30px 0 0;
 }
 
-.hero .col-left a:hover {
-    cursor: url("cursore2.svg");
+a:hover {
+    cursor: url("pointer.svg"), auto;
 }
 
 .chi-sono {
-    color: #F49097;
+    color: #F68890;
 }
 
 .progetti {
-    color: #DFB2F4;
+    color: #566BEF;
 }
 
 .contattami {
-    color: #55D6C2;
+    color: #4AD0BB;
 }
