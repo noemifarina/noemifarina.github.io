@@ -26,6 +26,7 @@
     /*COLORS*/
 
     --pink: #E78F8E;
+    --yellow: #FFD275;
     --purple: #6A7CF1;
     --green: #3CAB89;
     --primary-button: #E78F8E;
@@ -37,7 +38,7 @@
 }
 
 html {
-    cursor: url("cursore2.svg"), auto;
+    cursor: url("immagini/cursore2.svg"), auto;
 }
 
 body {
@@ -77,6 +78,7 @@ h2 {
     width: 100%;
     text-transform: uppercase;
     color: var(--text-light);
+    margin: 0 0 var(--spacing-xl) 0;
 }
 
 h3 {
@@ -87,6 +89,7 @@ h3 {
     width: 100%;
     text-transform: uppercase;
     color: var(--text-light);
+    margin: 80px 0 40px 0;
 }
 
 h4 {
@@ -95,6 +98,7 @@ h4 {
     font-size: var(--h4-size);
     margin: 0;
     width: 100%;
+    margin: var(--spacing-lg) 0;
 }
 
 h5 {
@@ -157,7 +161,6 @@ p {
 .two-column>.col-left {
     width: 50%;
     box-sizing: border-box;
-    /* padding: 0 var(--spacing-xl) 0 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,11 +170,10 @@ p {
 .two-column>.col-right {
     width: 50%;
     box-sizing: border-box;
-    /* padding: 0 0 0 var(--spacing-xl); */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
 .primary-button {
@@ -227,7 +229,7 @@ p {
 }
 
 
-.section-container .landing-page-shuttle {
+.landing-page .shuttle {
     width: 442px;
     height: 442px;
 }
@@ -268,14 +270,6 @@ p {
     height: 242px;
 }
 
-#chisono1 {
-    padding: var(--spacing-xl) 0 0 150px;
-}
-
-#chisono2 {
-    padding: var(--spacing-xl) 0 0 290px;
-}
-
 .chi-sono-section p {
     width: 567px;
     background-color: white;
@@ -287,6 +281,45 @@ p {
     box-sizing: border-box;
 }
 
+.grid-container-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "chisono1 ."
+        ". chisono2";
+    gap: 20px;
+    place-self: center;
+}
+
+#chisono1 {
+    grid-area: chisono1;
+}
+
+#chisono2 {
+    grid-area: chisono2;
+}
+
+.grid-container-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        ". chisono3"
+        "chisono4 .";
+    gap: 20px;
+    place-self: center;
+    margin: 190px 0 0 0;
+}
+
+#chisono3 {
+    grid-area: chisono3;
+}
+
+#chisono4 {
+    grid-area: chisono4;
+}
+
 #washi-yellow {
     width: 203px;
     height: 73px;
@@ -295,10 +328,34 @@ p {
     left: 190px;
 }
 
-.chi-sono-section h3 {
-    padding: 110px 0 40px 0;
+/* ---- FORMAZIONE ---- */
+
+.formazione-section ul img {
+    width: 40px;
+    height: 40px;
 }
 
-#chisono3 {
-    padding: 218px var(--spacing-xl) 0 ;
+.formazione-section ul img:nth-of-type(even) {
+    width: 35px;
+    height: 40px;
+}
+
+.formazione-section {
+    background-color: var(--yellow);
+    padding: var(--spacing-xl) 0;
+}
+
+.formazione-section h2 {
+    color: var(--text-dark);
+}
+
+.formazione-section ul {
+    width: 567px;
+    background-color: white;
+    margin: 0;
+    padding: 0 40px;
+    border: var(--border-box);
+    box-shadow: var(--box-shadow-1);
+    position: relative;
+    box-sizing: border-box;
 }
