@@ -210,6 +210,16 @@ p {
     margin: 0 var(--spacing-xl) 0 0;
 }
 
+.riquadro {
+    width: 567px;
+    background-color: white;
+    margin: 0;
+    padding: 40px;
+    border: var(--border-box);
+    box-shadow: var(--box-shadow-1);
+    box-sizing: border-box;
+  }
+
 /* ---- NAVBAR ---- */
 
 .navbar {
@@ -334,76 +344,44 @@ p {
 .formazione-section {
     background-color: var(--yellow);
     padding: var(--spacing-xl) 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formazione-section h2 {
+  }
+  
+  .formazione-section h2 {
     color: var(--text-dark);
-}
-
-.formazione-section .riquadro {
-    width: 567px;
-    background-color: white;
+  }
+  
+  .formazione-section h3 {
+    color: var(--text-dark);
+    margin: 0 0 var(--spacing-lg) 0;
+    font-size: 31px;
+    font-family: var(--body-font);
+    text-transform: none;
+  }
+  
+  .formazione-section ul {
+    padding: 0;
     margin: 0;
-    padding: 40px;
-    border: var(--border-box);
-    box-shadow: var(--box-shadow-1);
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.formazione-section .content {
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .formazione-section .riquadro.skills ul {
+    columns: 2;
+    display: list-item; /* <-- */
+  }
+  
+  .formazione-section li {
     display: flex;
-    width: 100%;
-}
-
-.formazione-section .image  {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 0 var(--spacing-lg) 0 0;
-}
-
-.formazione-section .image img {
-    display: flex;
-    flex-direction: column;
+  }
+  
+  .formazione-section img {
     width: 30px;
     height: 30px;
-}
-
-.formazione-section .image img:nth-of-type(2n) {
-    width: 30px;
-    height: 35px;
-}
-
-.formazione-section ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.formazione-section li {
-    font-size: 20px;
-    list-style: none;
-    padding: 20px 0;
-}
-
-.formazione-section .skills-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-
-.formazione-section .col-right li {
-    font-size: 20px;
-    list-style: none;
-    padding: 20px 0;
-    width: 50%;
-    float: left;
-}
+    padding: 0 30px 0 0;
+  }
+  
+  .formazione-section b {
+    display: block;
+  }
