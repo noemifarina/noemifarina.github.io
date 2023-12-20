@@ -446,6 +446,10 @@ p {
   gap: 40px;
 }
 
+.formazione-section .riquadro.skills {
+  margin-left: auto;
+}
+
 .formazione-section .riquadro.skills ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -485,6 +489,10 @@ p {
 
 .formazione-section b {
   display: block;
+}
+
+.formazione-section .formazione-images {
+  margin-left: auto;
 }
 
 .formazione-section .formazione-images img {
