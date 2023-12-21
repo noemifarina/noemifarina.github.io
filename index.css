@@ -52,12 +52,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* --d: 2px;
+  --d: 2px;
 
-    background: radial-gradient(circle at var(--d) var(--d),
-
-            #efefef calc(var(--d) - 1px),
-            #0000 var(--d)) 0 0 /20px 20px; */
+  background: radial-gradient(
+      circle at var(--d) var(--d),
+      #efefef calc(var(--d) - 1px),
+      #0000 var(--d)
+    )
+    0 0 /25px 25px;
 }
 
 main {
@@ -339,8 +341,19 @@ p {
 /* ---- CHI SONO ---- */
 
 .chi-sono-section {
-  background-color: var(--pink);
   padding: var(--spacing-xl) 0;
+  --d: 2px;
+
+  background: radial-gradient(
+      circle at var(--d) var(--d),
+      #e8a8a6 calc(var(--d) - 1px),
+      #e78f8e var(--d)
+    )
+    0 0 /25px 25px;
+}
+
+.chi-sono-section h2 {
+  text-shadow: 0px 0px 25px var(--pink);
 }
 
 .chi-sono-section img {
@@ -409,8 +422,15 @@ p {
 /* ---- FORMAZIONE ---- */
 
 .formazione-section {
-  background-color: var(--yellow);
   padding: var(--spacing-xl) 0;
+  --d: 2px;
+
+  background: radial-gradient(
+      circle at var(--d) var(--d),
+      #fabf49 calc(var(--d) - 1px),
+      #ffd275 var(--d)
+    )
+    0 0 /25px 25px;
 }
 
 .formazione-section .formazione-grid {
@@ -492,7 +512,11 @@ p {
 }
 
 .formazione-section .formazione-images {
-  margin-left: auto;
+  padding-right: 33px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
 .formazione-section .formazione-images img {
@@ -552,10 +576,22 @@ p {
 
 .contattami-section {
   padding: var(--spacing-xl) 0;
-  background-color: var(--green);
+  --d: 2px;
+
+  background: radial-gradient(
+      circle at var(--d) var(--d),
+      #44b694 calc(var(--d) - 1px),
+      #3cab89 var(--d)
+    )
+    0 0 /25px 25px;
 }
 
-.contattami-section .contattami-buttons:hover img {
+.contattami-section .contattami-links {
+  display: flex;
+  align-items: center;
+}
+
+.contattami-section .contattami-links:hover img {
   cursor: url("pointer.svg"), auto;
 }
 
@@ -565,7 +601,6 @@ p {
 
 .contattami-section .col-left p {
   color: var(--text-light);
-  padding: 0 0 var(--spacing-lg) 0;
   margin: 0;
 }
 
@@ -578,6 +613,7 @@ p {
 .contattami-section .col-right img {
   width: 154px;
   height: 154px;
+  padding-bottom: var(--spacing-md);
 }
 
 .contattami-section .col-right button {
@@ -595,4 +631,25 @@ p {
 
 .contattami-section .col-right button:hover {
   background-color: var(--primary-button-hover);
+}
+
+.contattami-section .contattami-image img {
+  width: 190px;
+  height: 190px;
+  padding: 0;
+}
+
+.contattami-section .riquadro.curriculum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contattami-section .riquadro.curriculum b {
+  font-size: 20px;
+}
+
+.contattami-section .riquadro.curriculum p {
+  margin-top: 0;
 }
