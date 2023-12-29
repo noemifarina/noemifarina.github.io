@@ -265,7 +265,7 @@ b {
 }
 
 .navbar::before {
-  top: 78px;
+  top: 81px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -686,6 +686,7 @@ img.washi-yellow {
 .contact-me-page form {
   display: flex;
   flex-direction: column;
+  padding-bottom: var(--spacing-xl);
   gap: 30px;
 }
 
@@ -850,7 +851,7 @@ img.washi-yellow {
   }
 
   .navbar::before {
-    top: 61px;
+    top: 64px;
   }
 
   [id].anchor::before {
@@ -919,6 +920,19 @@ img.washi-yellow {
 
   .contact-me-section .contact-me-image {
     display: none;
+  }
+
+  .contact-me-page .navbar {
+    background-color: var(--green);
+  }
+
+  .contact-me-page .navbar::after {
+    background: linear-gradient(
+      rgb(60, 171, 137) 10%,
+      rgba(60, 171, 137, 0.8) 50%,
+      rgba(60, 171, 137, 0.4) 70%,
+      transparent
+    );
   }
 
   .contact-me-page .user-details {
