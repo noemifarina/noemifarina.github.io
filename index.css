@@ -682,7 +682,7 @@ img.washi-yellow {
 .contact-me-page form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .contact-me-page label {
@@ -690,13 +690,20 @@ img.washi-yellow {
 }
 
 .contact-me-page textarea {
-  width: 100%;
+  width: calc(100% - 7px);
   height: 300px;
+  margin-top: 10px;
+}
+
+.contact-me-page .frame {
+  padding: var(--spacing-sm);
+  max-width: none;
 }
 
 .contact-me-page input {
-  width: 100%;
-  height: 30px;
+  width: calc(100% - 7px);
+  height: 40px;
+  margin-top: 10px;
 }
 
 .contact-me-page .user-details {
@@ -707,6 +714,54 @@ img.washi-yellow {
 
 .contact-me-page .user-details > div {
   flex: 1;
+}
+
+.contact-me-page .submit {
+  text-align: center;
+}
+
+.contact-me-page #overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  background-color: #000;
+  z-index: 1;
+}
+
+.contact-me-page #message-box {
+  display: none;
+  position: fixed;
+  width: calc(100% - 40px);
+  max-width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--yellow);
+  z-index: 2;
+}
+
+.contact-me-page #message-box.error {
+  background-color: var(--pink);
+}
+
+.contact-me-page #message-box p {
+  text-align: center;
+  padding: var(--spacing-lg) 0 var(--spacing-md) 0;
+}
+
+.contact-me-page #message-box .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.contact-me-page .close-icon img {
+  width: 33px;
+  height: 33px;
 }
 
 /** RESPONSIVE **/
@@ -865,6 +920,10 @@ img.washi-yellow {
   .contact-me-section .contact-me-image {
     display: none;
   }
+
+  .contact-me-page .user-details {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -896,6 +955,10 @@ img.washi-yellow {
   .education-section .frame.skills {
     margin-left: auto;
   }
+
+  .projects-section .project-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 1116px) {
@@ -908,7 +971,7 @@ img.washi-yellow {
   }
 }
 
-@media screen and (max-width: 1219px) {
+@media screen and (min-width: 768px) and (max-width: 1219px) {
   .intro .shuttle {
     width: 360px;
   }

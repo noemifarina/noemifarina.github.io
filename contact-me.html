@@ -11,6 +11,64 @@
     />
     <link rel="stylesheet" href="index.css" />
     <title>Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("Zmjsti8BnoKEZozXi");
+      })();
+    </script>
+    <script>
+      window.onload = function () {
+        var form = document.getElementById("contact-form");
+        var message = document.getElementById("message-box");
+        var overlay = document.getElementById("overlay");
+        var submit = form.querySelector('button[type="submit"]');
+
+        var showMessage = function (success) {
+          message.style.display = "block";
+          overlay.style.display = "block";
+
+          if (success) {
+            message.classList.remove("error");
+            message.querySelector("p").innerText =
+              "Your message has been sent successfully!";
+          } else {
+            message.classList.add("error");
+            message.querySelector("p").innerText =
+              "Something went wrong. Please, try again.";
+          }
+        };
+        var hideMessage = function (success) {
+          message.style.display = "none";
+          overlay.style.display = "none";
+        };
+
+        message
+          .querySelector(".close-icon")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            hideMessage();
+          });
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          submit.disabled = true;
+          emailjs
+            .sendForm("service_portfolio", "template_portfolio", this)
+            .then(
+              function () {
+                form.reset();
+                showMessage(true);
+                submit.disabled = false;
+              },
+              function (error) {
+                showMessage(false);
+                submit.disabled = false;
+              }
+            );
+        });
+      };
+    </script>
   </head>
 
   <body class="contact-me-page">
@@ -52,32 +110,51 @@
       <!-- FORM-->
 
       <div class="section-container">
-        <h2>Form</h2>
-        <form action="/submit" method="post">
+        <h2>Contact me!</h2>
+        <form id="contact-form" method="post">
           <div class="user-details">
             <div>
               <label for="name">Nome (opzionale)</label>
-              <input type="text" id="name" name="name" />
+              <input class="frame" type="text" id="name" name="name" />
             </div>
             <div>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                class="frame"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
             </div>
           </div>
           <div>
             <label for="message">Messaggio:</label>
             <textarea
+              class="frame"
               placeholder="Scrivi qui"
               id="message"
               name="message"
               rows="4"
               cols="50"
+              required
             ></textarea>
           </div>
-          <!-- <input type="submit" value="Invia" /> -->
-          <button class="primary-button" type="submit">Send</button>
+          <div class="submit">
+            <button class="primary-button" type="submit">Send</button>
+          </div>
         </form>
+        <div id="message-box" class="frame">
+          <a href="#" class="close-icon">
+            <img src="images/close.svg" />
+          </a>
+          <p>
+            Your message has been sent successfully!<!-- Message goes here -->
+          </p>
+        </div>
       </div>
     </main>
+
+    <div id="overlay"></div>
   </body>
 </html>
