@@ -365,6 +365,8 @@ b {
 
 /* ---- CHI SONO ---- */
 
+
+
 .about-me-section {
   padding: var(--spacing-xl) 0;
   --d: 2px;
@@ -400,6 +402,7 @@ b {
 
 .about-me-section .col-left p a {
   text-decoration: underline;
+  color: #d87573;
 }
 
 .grid-container-left {
@@ -557,7 +560,12 @@ img.washi-yellow {
   color: var(--text-dark);
 }
 
-.projects-section .project-card:hover {
+.projects-section .project-card a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.projects-section .project-card a:hover {
   cursor: url("pointer.svg"), auto;
 }
 

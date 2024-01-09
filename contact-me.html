@@ -1,161 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto:wght@300&family=DM+Mono:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <title>Email me!</title>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("Zmjsti8BnoKEZozXi");
-      })();
-    </script>
-    <script>
-      window.onload = function () {
-        var form = document.getElementById("contact-form");
-        var message = document.getElementById("message-box");
-        var overlay = document.getElementById("overlay");
-        var submit = form.querySelector('button[type="submit"]');
 
-        var showMessage = function (success) {
-          message.style.display = "block";
-          overlay.style.display = "block";
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto:wght@300&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>Email me!</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("Zmjsti8BnoKEZozXi");
+    })();
+  </script>
+  <script>
+    window.onload = function () {
+      var form = document.getElementById("contact-form");
+      var message = document.getElementById("message-box");
+      var overlay = document.getElementById("overlay");
+      var submit = form.querySelector('button[type="submit"]');
 
-          if (success) {
-            message.classList.remove("error");
-            message.querySelector("p").innerText =
-              "Your message has been sent successfully!";
-          } else {
-            message.classList.add("error");
-            message.querySelector("p").innerText =
-              "Something went wrong. Please, try again.";
-          }
-        };
-        var hideMessage = function (success) {
-          message.style.display = "none";
-          overlay.style.display = "none";
-        };
+      var showMessage = function (success) {
+        message.style.display = "block";
+        overlay.style.display = "block";
 
-        message
-          .querySelector(".close-icon")
-          .addEventListener("click", function (e) {
-            e.preventDefault();
-            hideMessage();
-          });
-
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-          submit.disabled = true;
-          emailjs
-            .sendForm("service_portfolio", "template_portfolio", this)
-            .then(
-              function () {
-                form.reset();
-                showMessage(true);
-                submit.disabled = false;
-              },
-              function (error) {
-                showMessage(false);
-                submit.disabled = false;
-              }
-            );
-        });
+        if (success) {
+          message.classList.remove("error");
+          message.querySelector("p").innerText =
+            "Il tuo messaggio è stato inviato!";
+        } else {
+          message.classList.add("error");
+          message.querySelector("p").innerText =
+            "Qualcosa è andato storto. Per favore, prova di nuovo.";
+        }
       };
-    </script>
-  </head>
+      var hideMessage = function (success) {
+        message.style.display = "none";
+        overlay.style.display = "none";
+      };
 
-  <body class="contact-me-page">
-    <!-- NAVBAR -->
+      message
+        .querySelector(".close-icon")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          hideMessage();
+        });
 
-    <nav class="navbar">
-      <div class="wrapper">
-        <div class="wrapper-container">
-          <a href="index.html">
-            <img src="images/logo.png" alt="logo" />
-          </a>
-          <div id="menu" class="link-container">
-            <a class="secondary-button about-me" href="index.html#chisono"
-              >About me</a
-            >
-            <a class="secondary-button education" href="index.html#education"
-              >Education</a
-            >
-            <a class="secondary-button projects" href="index.html#projects"
-              >Projects</a
-            >
-            <a class="secondary-button contact-me" href="index.html#contact-me"
-              >Contact me</a
-            >
-          </div>
-          <div class="hamburger-menu">
-            <a href="#menu" class="hamburger-icon">
-              <img src="images/hamburger.svg" />
-            </a>
-            <a href="#" class="close-icon">
-              <img src="images/close.svg" />
-            </a>
-          </div>
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        submit.disabled = true;
+        emailjs
+          .sendForm("service_portfolio", "template_portfolio", this)
+          .then(
+            function () {
+              form.reset();
+              showMessage(true);
+              submit.disabled = false;
+            },
+            function (error) {
+              showMessage(false);
+              submit.disabled = false;
+            }
+          );
+      });
+    };
+  </script>
+</head>
+
+<body class="contact-me-page">
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+    <div class="wrapper">
+      <div class="wrapper-container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <div id="menu" class="link-container">
+          <a class="secondary-button about-me" href="index.html#chisono">Chi sono</a>
+          <a class="secondary-button education" href="index.html#education">Formazione</a>
+          <a class="secondary-button projects" href="index.html#projects">Progetti</a>
+          <a class="secondary-button contact-me" href="index.html#contact-me">Contattami</a>
         </div>
-      </div>
-    </nav>
-
-    <main>
-      <!-- FORM-->
-
-      <div class="section-container">
-        <h2>Email me!</h2>
-        <form id="contact-form" method="post">
-          <div class="user-details">
-            <div>
-              <label for="name">Nome (opzionale)</label>
-              <input class="frame" type="text" id="name" name="name" />
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input
-                class="frame"
-                type="email"
-                id="email"
-                name="email"
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <label for="message">Messaggio:</label>
-            <textarea
-              class="frame"
-              placeholder="Scrivi qui"
-              id="message"
-              name="message"
-              rows="4"
-              cols="50"
-              required
-            ></textarea>
-          </div>
-          <div class="submit">
-            <button class="primary-button" type="submit">Send</button>
-          </div>
-        </form>
-        <div id="message-box" class="frame">
+        <div class="hamburger-menu">
+          <a href="#menu" class="hamburger-icon">
+            <img src="images/hamburger.svg" />
+          </a>
           <a href="#" class="close-icon">
             <img src="images/close.svg" />
           </a>
-          <p>
-            Your message has been sent successfully!<!-- Message goes here -->
-          </p>
         </div>
       </div>
-    </main>
+    </div>
+  </nav>
 
-    <div id="overlay"></div>
-  </body>
+  <main>
+    <!-- FORM-->
+
+    <div class="section-container">
+      <h2>Mandami un'email!</h2>
+      <form id="contact-form" method="post">
+        <div class="user-details">
+          <div>
+            <label for="name">Nome (opzionale)</label>
+            <input class="frame" type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input class="frame" type="email" id="email" name="email" required />
+          </div>
+        </div>
+        <div>
+          <label for="message">Messaggio:</label>
+          <textarea class="frame" placeholder="Scrivi qui" id="message" name="message" rows="4" cols="50"
+            required></textarea>
+        </div>
+        <div class="submit">
+          <button class="primary-button" type="submit">Invia</button>
+        </div>
+      </form>
+      <div id="message-box" class="frame">
+        <a href="#" class="close-icon">
+          <img src="images/close.svg" />
+        </a>
+        <p>
+          Your message has been sent successfully!<!-- Message goes here -->
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <div id="overlay"></div>
+</body>
+
 </html>

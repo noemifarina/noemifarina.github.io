@@ -1,459 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto:wght@300&family=DM+Mono:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <title>Portfolio</title>
-  </head>
 
-  <body class="home-page">
-    <!-- NAVBAR -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto:wght@300&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>Portfolio</title>
+</head>
 
-    <nav class="navbar">
-      <div class="wrapper">
-        <div class="wrapper-container">
-          <a href="index.html">
-            <img src="images/logo.png" alt="logo" />
+<body class="home-page">
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+    <div class="wrapper">
+      <div class="wrapper-container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <div id="menu" class="link-container">
+          <a class="secondary-button about-me" href="index.html#chisono">Chi sono</a>
+          <a class="secondary-button education" href="index.html#education">Formazione</a>
+          <a class="secondary-button projects" href="index.html#projects">Progetti</a>
+          <a class="secondary-button contact-me" href="index.html#contact-me">Contattami</a>
+        </div>
+        <div class="hamburger-menu">
+          <a href="#menu" class="hamburger-icon">
+            <img src="images/hamburger.svg" />
           </a>
-          <div id="menu" class="link-container">
-            <a class="secondary-button about-me" href="index.html#chisono"
-              >About me</a
-            >
-            <a class="secondary-button education" href="index.html#education"
-              >Education</a
-            >
-            <a class="secondary-button projects" href="index.html#projects"
-              >Projects</a
-            >
-            <a class="secondary-button contact-me" href="index.html#contact-me"
-              >Contact me</a
-            >
-          </div>
-          <div class="hamburger-menu">
-            <a href="#menu" class="hamburger-icon">
-              <img src="images/hamburger.svg" />
-            </a>
-            <a href="#" class="close-icon">
-              <img src="images/close.svg" />
-            </a>
+          <a href="#" class="close-icon">
+            <img src="images/close.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- intro -->
+
+    <div id="homepage" class="anchor">
+      <div class="intro">
+        <div class="section-container">
+          <div class="two-column">
+            <div class="col-left">
+              <h1>
+                Ciao!
+                <br />
+                Sono Noemi -
+                <br />
+                UI/UX Designer
+              </h1>
+              <p>
+                Il design per me non è solo un atto artistico, ma una forma di <b>comunicazione</b>:
+                <br>
+                un dialogo con gli utenti,
+                attraverso l'interfaccia grafica di app e siti web, lasciando un'<b>impronta positiva</b> nella vita di
+                chi li
+                utilizza.
+                <br>
+                Questa, è la mia <b>sfida quotidiana</b>.
+              </p>
+            </div>
+            <div class="col-right">
+              <img class="shuttle" src="images/shuttle.png" alt="shuttle saying explore new ideas" />
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <main>
-      <!-- intro -->
+    <!-- CHI SONO -->
 
-      <div id="homepage" class="anchor">
-        <div class="intro">
-          <div class="section-container">
-            <div class="two-column">
-              <div class="col-left">
-                <h1>
-                  Hi!
-                  <br />
-                  I'm Noemi -
-                  <br />
-                  UI/UX Designer
-                </h1>
-                <p>
-                  Design, for me, is not merely an artistic act but a form of
-                  <b>communication</b>:
-                  <br />
-                  a dialogue with users through the graphic interface of apps
-                  and websites, leaving a positive <b>impact</b>
-                  on the lives of those who use them.
-                  <br />
-                  This, is my <b>daily challenge</b>.
-                </p>
+    <div id="chisono" class="anchor">
+      <div class="about-me-section">
+        <div class="section-container">
+          <h2>Chi sono</h2>
+          <div class="two-column">
+            <div class="col-left">
+              <div class="grid-container-left">
+                <img id="about-me-1" src="images/about-me-1.png" alt="girl using a laptop" />
+                <img id="about-me-2" src="images/about-me-2.png" alt="image of a lightbulb" />
               </div>
-              <div class="col-right">
-                <img class="shuttle" src="images/shuttle.png" alt="" />
+            </div>
+            <div class="col-right">
+              <p>
+                La mia <b>avventura</b> nel mondo del design è iniziata nel 2020 quando, in piena pandemia, ho
+                <b>scoperto</b>
+                la magia della User Experience guardando una diretta in un canale di Twitch. Durante il mio percorso
+                <b>formativo</b>, ho avuto il privilegio di immergermi completamente nella progettazione di interfacce,
+                esplorando la fusione armoniosa tra UX e UI. I progetti che ho affrontato, soprattutto durante il mio
+                master, non solo hanno arricchito le mie <b>competenze</b>, ma hanno anche alimentato il mio desiderio
+                di
+                trasformare le sfide in opportunità. Trovo una grande soddisfazione nel <b>convertire</b> i "pain
+                points" dei
+                servizi in punti di forza, un processo che mi ricorda l'emozione di risolvere <b>enigmi</b> complicati
+                da
+                bambina.
+                <img class="washi-yellow" src="images/washiyellow.png" alt="yellow washi-tape" />
+              </p>
+            </div>
+          </div>
+          <h3>"Every puzzle has an answer!"</h3>
+          <div class="two-column">
+            <div class="col-left">
+              <p>
+                Il mio <b>viaggio</b> è stato guidato dalla passione nel trovare soluzioni creative e funzionali, una
+                passione che ha radici sin da quando, a soli 9 anni, ho iniziato ad immergermi nel mondo degli enigmi e
+                misteri giocando al <a href="https://it.wikipedia.org/wiki/Professor_Layton" target="_blank">Professor
+                  Layton</a>. Quel gioco ha scatenato il desiderio di <b>risolvere problemi</b> e di creare connessioni
+                significative, una passione che ha trovato il suo sfogo nella progettazione di <b>interfacce</b>. Oggi,
+                sono pronta a portare la mia passione e le mie competenze nel mondo del lavoro, con l'obiettivo di
+                creare esperienze che siano non solo <b>funzionali</b> ma anche <b>memorabili</b>. Sono entusiasta di
+                continuare a imparare, crescere e collaborare con coloro che <b>condividono</b> la mia visione di un
+                design centrato sull'utente.
+
+                <img class="washi-yellow" src="images/washiyellow.png" alt="yellow washi-tape" />
+              </p>
+            </div>
+            <div class="col-right">
+              <div class="grid-container-right">
+                <img id="about-me-3" src="images/about-me-3.png" alt="girl playing videogames" />
+                <img id="about-me-4" src="images/about-me-4.png" alt="console controller" />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <!-- education -->
 
-      <!-- CHI SONO -->
-
-      <div id="chisono" class="anchor">
-        <div class="about-me-section">
-          <div class="section-container">
-            <h2>About me</h2>
-            <div class="two-column">
-              <div class="col-left">
-                <div class="grid-container-left">
-                  <img id="about-me-1" src="images/about-me-1.png" alt="" />
-                  <img id="about-me-2" src="images/about-me-2.png" alt="" />
-                </div>
-              </div>
-              <div class="col-right">
-                <p>
-                  My <b>journey</b> into the world of design began in 2020 when,
-                  amidst the global pandemic, I <b>discovered</b> the world of
-                  User Experience while watching a livestream on Twitch.
-                  Throughout my <b>educational journey</b> I had the privilege
-                  of fully immersing myself in the design process and explore
-                  the harmonious fusion of UX and UI. The projects I tackled,
-                  especially during my master's program, not only enriched my
-                  <b>skills</b>, but also fueled my desire to turn challenges
-                  into opportunities. I find great satisfaction in
-                  <b>transforming</b> "pain points" into strengths, a process
-                  that reminds me the excitement of solving complicated
-                  <b>puzzles</b> as a child.
-                  <img
-                    class="washi-yellow"
-                    src="images/washiyellow.png"
-                    alt=""
-                  />
-                </p>
-              </div>
+    <div id="education" class="anchor">
+      <div class="education-section">
+        <div class="section-container">
+          <h2>Formazione</h2>
+          <div class="education-grid">
+            <div class="frame certificates">
+              <h3>Educazione</h3>
+              <ul>
+                <li>
+                  <div class="image-col">
+                    <img src="images/start2impact.png" alt="start2impact logo" />
+                  </div>
+                  <div class="text-col">
+                    <b>Start2Impact - UX/UI design</b> in corso
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/udemy.png" alt="udemy logo" />
+                  </div>
+                  <div class="text-col">
+                    <b>Udemy - HTML & CSS Bootcamp</b> novembre 2023
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/coursera.png" alt="coursera logo" />
+                  </div>
+                  <div class="text-col">
+                    <b>Coursera (Google) - UX/UI design</b> novembre 2021 -
+                    aprile 2022
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/udemy.png" alt="udemy logo" />
+                  </div>
+                  <div class="text-col">
+                    <b>Udemy - Web & UX design</b> agosto 2021 - novembre 2021
+                  </div>
+                </li>
+              </ul>
             </div>
-            <h3>"Every puzzle has an answer!"</h3>
-            <div class="two-column">
-              <div class="col-left">
-                <p>
-                  My <b>journey</b> has been guided by a passion for finding
-                  creative and functional solutions, a passion rooted in my
-                  <b>childhood</b> when, at the age of 9, I delved into the
-                  world of puzzles and mysteries by playing
-                  <a
-                    href="https://it.wikipedia.org/wiki/Professor_Layton"
-                    target="_blank"
-                    >Professor Layton</a
-                  >. That game sparked a desire to <b>solve problems</b> and
-                  create meaningful connections, a passion that found its outlet
-                  in <b>interface design</b>. Today, I am ready to bring my
-                  passion and skills, aiming to create experiences that are not
-                  only <b>functional</b> but also <b>memorable</b>. I am excited
-                  to continue learning, growing, and collaborating with those
-                  who <b>share</b> my vision of user-centered design.
-                  <img
-                    class="washi-yellow"
-                    src="images/washiyellow.png"
-                    alt=""
-                  />
-                </p>
-              </div>
-              <div class="col-right">
-                <div class="grid-container-right">
-                  <img id="about-me-3" src="images/about-me-3.png" alt="" />
-                  <img id="about-me-4" src="images/about-me-4.png" alt="" />
-                </div>
-              </div>
+            <!-- </div> -->
+            <!-- <div class="col-right"> -->
+            <div class="frame skills">
+              <h3>Skills</h3>
+              <ul>
+                <li>
+                  <div class="image-col">
+                    <img src="images/userinterface.png" alt="user interface icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>user interface</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/userresearch.png" alt="user research icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>user research</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/wireframe.png" alt="wireframes icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>wireframing</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/prototyping.png" alt="prototyping icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>prototyping</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/userflow.png" alt="user flow icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>user flow</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/userjourney.png" alt="user journey icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>user journey</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/usertesting.png" alt="user testing icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>user testing</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/graphicdesign.png" alt="graphic design icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>graphic design</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/copywriting.png" alt="copywriting icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>copywriting</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/htmlcss.png" alt="HTML and CSS icon" />
+                  </div>
+                  <div class="text-col">
+                    <span>html & css</span>
+                  </div>
+                </li>
+              </ul>
             </div>
+            <div class="frame tools">
+              <h3>Tools</h3>
+              <ul>
+                <li>
+                  <div class="image-col">
+                    <img src="images/figma.png" alt="figma logo" />
+                  </div>
+                  <div class="text-col">Figma</div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/adobexd.png" alt="adobe xd logo" />
+                  </div>
+                  <div class="text-col">Adobe Xd</div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/illustrator.png" alt="illustrator logo" />
+                  </div>
+                  <div class="text-col">Illustrator</div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/photoshop.png" alt="photoshop logo" />
+                  </div>
+                  <div class="text-col">Photoshop</div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/indesign.png" alt="indesign logo" />
+                  </div>
+                  <div class="text-col">InDesign</div>
+                </li>
+                <li>
+                  <div class="image-col">
+                    <img src="images/webflow.png" alt="webflow logo" />
+                  </div>
+                  <div class="text-col">Webflow</div>
+                </li>
+              </ul>
+            </div>
+            <div class="education-images">
+              <!-- grid -->
+              <img src="images/education-1.png" alt="hand holding mobile phone" />
+              <img src="images/education-2.png" alt="computer screen showing graduation cap" />
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
           </div>
         </div>
       </div>
-      <!-- education -->
+    </div>
+    <!-- projects -->
 
-      <div id="education" class="anchor">
-        <div class="education-section">
-          <div class="section-container">
-            <h2>Education</h2>
-            <div class="education-grid">
-              <div class="frame certificates">
-                <h3>Certificates</h3>
-                <ul>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/start2impact.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <b>Start2Impact - UX/UI design</b> ongoing
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/udemy.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <b>Udemy - HTML & CSS Bootcamp</b> november 2023
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/coursera.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <b>Coursera (Google) - UX/UI design</b> november 2021 -
-                      april 2022
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/udemy.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <b>Udemy - Web & UX design</b> august 2021 - november 2021
-                    </div>
-                  </li>
-                </ul>
+    <div id="projects" class="anchor">
+      <div class="projects-section">
+        <div class="section-container">
+          <h2>Progetti</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <div class="project-title">
+                <p>iVegan</p>
+                <img class="icon" src="images/ux-icon.png" alt="user experience icon" />
+                <img class="icon" src="images/ui-icon.png" alt="user interface icon" />
               </div>
-              <!-- </div> -->
-              <!-- <div class="col-right"> -->
-              <div class="frame skills">
-                <h3>Skills</h3>
-                <ul>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/userinterface.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>user interface</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/userresearch.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>user research</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/wireframe.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>wireframing</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/prototyping.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>prototyping</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/userflow.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>user flow</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/userjourney.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>user journey</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/usertesting.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>user testing</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/graphicdesign.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>graphic design</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/copywriting.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>copywriting</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/htmlcss.png" alt="" />
-                    </div>
-                    <div class="text-col">
-                      <span>html & css</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="frame tools">
-                <h3>Tools</h3>
-                <ul>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/figma.png" alt="" />
-                    </div>
-                    <div class="text-col">Figma</div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/adobexd.png" alt="" />
-                    </div>
-                    <div class="text-col">Adobe Xd</div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/illustrator.png" alt="" />
-                    </div>
-                    <div class="text-col">Illustrator</div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/photoshop.png" alt="" />
-                    </div>
-                    <div class="text-col">Photoshop</div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/indesign.png" alt="" />
-                    </div>
-                    <div class="text-col">InDesign</div>
-                  </li>
-                  <li>
-                    <div class="image-col">
-                      <img src="images/webflow.png" alt="" />
-                    </div>
-                    <div class="text-col">Webflow</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="education-images">
-                <!-- grid -->
-                <img src="images/education-1.png" alt="" />
-                <img src="images/education-2.png" alt="" />
-              </div>
-              <!-- </div> -->
-              <!-- </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- projects -->
-
-      <div id="projects" class="anchor">
-        <div class="projects-section">
-          <div class="section-container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-              <div class="project-card">
-                <div class="project-title">
-                  <p>iVegan</p>
-                  <img class="icon" src="images/ux-icon.png" alt="" />
-                  <img class="icon" src="images/ui-icon.png" alt="" />
-                </div>
-                <img class="placeholder" src="images/ivegan.png" alt="" />
+              <a href="file/Progetto User Interface 2 di Noemi Farina.pdf" target="_blank">
+                <img class="placeholder" src="images/ivegan.png" alt="mockup picture of UX/UI project for iVegan" />
                 <p>
                   Case study di un sito italiano dedicato alla vendita di
                   prodotti bio e vegani.
                 </p>
+              </a>
+            </div>
+            <div class="project-card">
+              <div class="project-title">
+                <p>Planty Of Food</p>
+                <img class="icon" src="images/gd.png" alt="graphic design icon" />
               </div>
-              <div class="project-card">
-                <div class="project-title">
-                  <p>Planty Of Food</p>
-                  <img class="icon" src="images/gd.png" alt="" />
-                </div>
-                <img class="placeholder" src="images/plantyoffood.png" alt="" />
+              <a href="file/Progetto Grafica UXUI di Noemi Farina (1).pdf" target="_blank">
+                <img class="placeholder" src="images/plantyoffood.png"
+                  alt="mockup picture of graphic design project for planty of food" />
                 <p>
                   Creazione di logo, color palette, icone, images per Facebook,
                   YouTube e Instagram per un e-commerce di prodotti plant based.
                 </p>
+              </a>
+            </div>
+            <div class="project-card">
+              <div class="project-title">
+                <p>Cultured meat</p>
+                <img class="icon" src="images/copywriting-icon.png" alt="copywriting icon" />
               </div>
-              <div class="project-card">
-                <div class="project-title">
-                  <p>Cultured meat</p>
-                  <img class="icon" src="images/copywriting-icon.png" alt="" />
-                </div>
-                <img
-                  class="placeholder"
-                  src="images/copywritingarticle.png"
-                  alt=""
-                />
+              <a href="file/Progetto Copywriting di Noemi Farina.pdf" target="_blank">
+                <img class="placeholder" src="images/copywritingarticle.png"
+                  alt="mockup picture of copywriting project for a blog" />
                 <p>Blog article per un'azienda che produce carne sintetica.</p>
+              </a>
+            </div>
+            <div class="project-card">
+              <div class="project-title">
+                <p>Portfolio</p>
+                <img class="icon" src="images/code-icon.png" alt="coding icon" />
               </div>
-              <div class="project-card">
-                <div class="project-title">
-                  <p>Portfolio</p>
-                  <img class="icon" src="images/code-icon.png" alt="" />
-                </div>
-                <img class="placeholder" src="images/portfolio.png" alt="" />
-                <p>Creazione del sito personale.</p>
+              <img class="placeholder" src="images/portfolio.png" alt="mockup picture of my portfolio website" />
+              <p>Creazione del sito personale.</p>
+            </div>
+            <div class="project-card">
+              <div class="project-title">
+                <p>TeamApp</p>
+                <img class="icon" src="images/webflow-icon.png" alt="webflow icon" />
               </div>
-              <div class="project-card">
-                <div class="project-title">
-                  <p>TeamApp</p>
-                  <img class="icon" src="images/webflow-icon.png" alt="" />
-                </div>
-                <img class="placeholder" src="images/teamapp.png" alt="" />
+              <a href="https://teamapp-4e8a1c.webflow.io/" target="_blank">
+                <img class="placeholder" src="images/teamapp.png" alt="mockup picture of my webflow website" />
                 <p>Creazione di un sito con l'utilizzo di Webflow.</p>
+              </a>
+            </div>
+            <div class="project-card">
+              <div class="project-title">
+                <p>???</p>
               </div>
-              <div class="project-card">
-                <div class="project-title">
-                  <p>???</p>
-                </div>
-                <img class="placeholder" src="images/coming-soon.png" alt="" />
-                <p>?????????????</p>
-              </div>
+              <img class="placeholder" src="images/coming-soon.png" alt="coming soon picture" />
+              <p>?????????????</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- contact-me -->
+    <!-- contact-me -->
 
-      <div id="contact-me" class="anchor">
-        <div class="contact-me-section">
-          <div class="section-container">
-            <div class="two-column">
-              <div class="col-left">
-                <h2>Contact me!</h2>
+    <div id="contact-me" class="anchor">
+      <div class="contact-me-section">
+        <div class="section-container">
+          <div class="two-column">
+            <div class="col-left">
+              <h2>Contattami!</h2>
+              <p>
+                Se i miei lavori ti sono piaciuti e vuoi <b>collaborare</b> con me, mi trovi su:,
+                <br />
+              </p>
+              <div class="contact-me-links">
+                <a href="https://www.linkedin.com/in/noemi-farina-6b1b69226/" target="_blank">
+                  <img src="images/linkedin-icon.png" alt="linkedin icon" />
+                </a>
+                <a href="https://www.behance.net/noemifarina" target="_blank">
+                  <img src="images/behance-icon.png" alt="behance icon" />
+                </a>
+                <a href="contact-me.html">
+                  <img src="images/email-icon.png" alt="email icon" />
+                </a>
+                <div class="contact-me-image">
+                  <img src="images/contact-me-1.png" alt="girl in front of laptop" />
+                </div>
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="frame curriculum">
                 <p>
-                  If you enjoyed my work and would like to <b>collaborate</b>,
+                  <b>Check my resume!</b>
                   <br />
-                  you can find me on:
+                  scan the QR code, or click the button below:
                 </p>
-                <div class="contact-me-links">
-                  <a
-                    href="https://www.linkedin.com/in/noemi-farina-6b1b69226/"
-                    target="_blank"
-                  >
-                    <img src="images/linkedin-icon.png" alt="" />
-                  </a>
-                  <a href="https://www.behance.net/noemifarina" target="_blank">
-                    <img src="images/behance-icon.png" alt="" />
-                  </a>
-                  <a href="contact-me.html">
-                    <img src="images/email-icon.png" alt="" />
-                  </a>
-                  <div class="contact-me-image">
-                    <img src="images/contact-me-1.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-right">
-                <div class="frame curriculum">
-                  <p>
-                    <b>Check my resume!</b>
-                    <br />
-                    scan the QR code, or click the button below:
-                  </p>
-                  <img src="images/qr-code.png" alt="" />
+                <img src="images/qr-code.png" alt="qr code" />
+                <a href="file/Curriculum di Noemi Farina.pdf" target="_blank">
                   <button>Download</button>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
